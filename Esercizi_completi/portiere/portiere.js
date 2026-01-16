@@ -1,18 +1,17 @@
-function controllaDati() {
+function f1() {
     
-    let campoNome = document.getElementById("nome-input");
-    let selettoreGenere = document.getElementById("genere-select");
+   
     
-    let nome = campoNome.value;
-    let genere = selettoreGenere.value;
+    let nome = document.getElementById("nome").value;
+    let genere = document.getElementById("sceltagenere").value;
 
     if (nome == "") {
-        campoNome.style.border = "2px solid red";
+        document.getElementById("nome").style.border = "2px solid red";
     } 
     else if (genere == "Uomo") {
-        campoNome.style.border = "2px solid blue";
+        document.getElementById("nome").style.border = "2px solid blue";
     } 
     else if (genere == "Donna") {
-        campoNome.style.border = "2px solid pink";
+        document.getElementById("nome").style.border = "2px solid pink";
     }
 }
